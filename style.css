@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/bg.png);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: auto;
+}
+   
+header div {
+    background-image: linear-gradient(90deg, #D848CF 0%, #992D95 40%, #367AB9 110%);
+    border-radius: 50%;
+
+    width: 128px;
+    height: 128px;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    cursor: pointer;
+    transition: transform .3s;
+
+    animation: fromTop .7s .2s backwards;
+}
+
+header div:hover{
+    transform: scale(1.05);
+}
+
+.items-center {
+    align-items:center
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+}
+
+section {
+    color: #ffffff;
+    background-image: linear-gradient(90deg, #D848CF 0%, #992D95 40%, #367AB9 110%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #a1a1a1;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+.games-list img {
+    border-radius: 8px;
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.channel-list img {
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
+
+#social-media {
+   margin-bottom: 24px;
+} 
+
+/* Transitions */
+
+section ul li {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+section ul li:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+
+main section {
+    animation: fromBottom .5s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: .0s;
+}
+
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+
+.modal {
+    display: none; /* Oculte o modal por padrão */
+    position: fixed; /* Posicionamento fixo para cobrir a tela */
+    z-index: 1; /* Coloque-o acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adicione rolagem, se necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura com transparência */
+  }
+
+  /* Estilize o conteúdo do modal */
+  .modal-content {
+    background-color: #000000;
+    margin: 15% auto; /* Centralize verticalmente na página */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    cursor: pointer;
+  }
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) ;
+    }
+}
