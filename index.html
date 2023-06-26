@@ -12,6 +12,7 @@
   <body>
     <header>
       <div class="items-center">
+        
         <img
           class="perfil"
           src="https://uploaddeimagens.com.br/images/004/516/316/full/euu.jpg?1687438361"
@@ -24,50 +25,90 @@
       <section>
         <div>
           <h2>Grupos de Kpop</h2>
-          <p>Meus grupos de kpop favoritos no momento!</p>
+          <p>Meus grupos de kpop favoritos no momento! Clique para saber mais.</p>
 
           <ul class="games-list">
             <li>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCLkAepWjdylmXSltofFvsYQ"
-              >
-                <img
-                  src="https://uploaddeimagens.com.br/images/004/516/400/thumb/bts-festa-group.jpg?1687441005"
-                  alt="Foto dos integrantes bts"
-                />
-              </a>
+              <img
+                onclick="document.getElementById('myModalBts').style.display='block'"
+                src="https://uploaddeimagens.com.br/images/004/516/400/thumb/bts-festa-group.jpg?1687441005"
+                alt="Foto dos integrantes bts"
+              />
             </li>
 
             <li>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A"
-              >
-                <img
-                  src="https://uploaddeimagens.com.br/images/004/516/404/thumb/blackpink.png?1687441169"
-                  alt="Foto das integrantes blackpink"
-                />
-              </a>
+              <img
+                onclick="document.getElementById('myModalBp').style.display='block'"
+                src="https://uploaddeimagens.com.br/images/004/516/404/thumb/blackpink.png?1687441169"
+                alt="Foto das integrantes blackpink"
+              />
             </li>
             <li>
               <img
-                onclick="document.getElementById('myModal').style.display='block'"
+                onclick="document.getElementById('myModalSkz').style.display='block'"
                 src="https://uploaddeimagens.com.br/images/004/516/413/thumb/stray-kidss.jpg?1687441328"
                 alt="Foto dos integrantes straykids"
               />
             </li>
           </ul>
         </div>
-        <div id="myModal" class="modal">
+        <div id="myModalSkz" class="modal">
           <div class="modal-content">
             <span
-              onclick="document.getElementById('myModal').style.display='none'"
+              onclick="document.getElementById('myModalSkz').style.display='none'"
               class="close"
               >&times;</span
             >
             <p>
-                Stray Kids é um grupo de K-pop formado em 2017 pela JYP Entertainment, composto por oito membros. Eles são conhecidos por sua autenticidade, habilidades de produção e letras que abordam temas como luta pessoal e juventude. Com uma base de fãs leais e reconhecimento internacional, o Stray Kids se destaca por suas performances enérgicas, vocais poderosos e sucesso na indústria musical.</p>
+              Stray Kids é um grupo de K-pop formado em 2017 pela JYP
+              Entertainment, composto por oito membros. Eles são conhecidos por
+              sua autenticidade, habilidades de produção e letras que abordam
+              temas como luta pessoal e juventude. Com uma base de fãs leais e
+              reconhecimento internacional, o Stray Kids se destaca por suas
+              performances enérgicas, vocais poderosos e sucesso na indústria
+              musical.
+            </p>
+          </div>
+        </div>
+        <div id="myModalBp" class="modal">
+          <div class="modal-content">
+            <span
+              onclick="document.getElementById('myModalBp').style.display='none'"
+              class="close"
+              >&times;</span
+            >
+            <p>
+              Blackpink é um grupo sul-coreano de K-pop formado pela YG
+              Entertainment, composto por Jisoo, Jennie, Rosé e Lisa. Desde sua
+              estreia em 2016, o Blackpink ganhou imensa popularidade tanto na
+              Coreia do Sul quanto internacionalmente, com hits como "Whistle",
+              "Ddu-Du Ddu-Du" e colaborações com artistas renomados. Com seu
+              estilo musical cativante, coreografias energéticas e visuais
+              impressionantes, o grupo se tornou uma das principais forças do
+              K-pop e conquistou uma enorme base de fãs ao redor do mundo.
+            </p>
+          </div>
+        </div>
+        <div id="myModalBts" class="modal">
+          <div class="modal-content">
+            <span
+              onclick="document.getElementById('myModalBts').style.display='none'"
+              class="close"
+              >&times;</span
+            >
+            <p>
+              BTS é um grupo de K-pop sul-coreano formado pela Big Hit
+              Entertainment, composto por sete integrantes: RM, Jin, Suga,
+              J-Hope, Jimin, V e Jungkook. Desde sua estreia em 2013, o BTS
+              alcançou um sucesso meteórico, conquistando uma enorme base de fãs
+              globalmente. Com suas letras sinceras, performances enérgicas e
+              mensagens de amor próprio e empoderamento, o grupo se tornou um
+              fenômeno cultural, alcançando recordes de vendas, colaborando com
+              artistas internacionais e quebrando barreiras linguísticas. O BTS
+              é reconhecido por sua influência no cenário musical, bem como em
+              questões sociais e filantrópicas, tornando-se um dos grupos mais
+              influentes e adorados da indústria musical.
+            </p>
           </div>
         </div>
       </section>

@@ -16,4 +16,4 @@ Projeto construído no evento Next Level Week do Rockeseat.
 
 ## ✉️ Contato
 
-nicolelicyanne0@gmail.com# favGroups
+nicolelicyanne0@gmail.com
