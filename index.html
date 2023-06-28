@@ -12,7 +12,6 @@
   <body>
     <header>
       <div class="items-center">
-        
         <img
           class="perfil"
           src="https://uploaddeimagens.com.br/images/004/516/316/full/euu.jpg?1687438361"
@@ -25,9 +24,11 @@
       <section>
         <div>
           <h2>Grupos de Kpop</h2>
-          <p>Meus grupos de kpop favoritos no momento! Clique para saber mais.</p>
+          <p>
+            Meus grupos de kpop favoritos no momento! Clique para saber mais.
+          </p>
 
-          <ul class="games-list">
+          <ul class="kpoplist">
             <li>
               <img
                 onclick="document.getElementById('myModalBts').style.display='block'"
@@ -43,14 +44,22 @@
                 alt="Foto das integrantes blackpink"
               />
             </li>
+
             <li>
               <img
                 onclick="document.getElementById('myModalSkz').style.display='block'"
                 src="https://uploaddeimagens.com.br/images/004/516/413/thumb/stray-kidss.jpg?1687441328"
                 alt="Foto dos integrantes straykids"
+                id="skz"
               />
             </li>
           </ul>
+          <a
+            href="https://github.com/strawnico/favGroups"
+            target="_blank"
+            class="btn"
+            >Repositório</a
+          >
         </div>
         <div id="myModalSkz" class="modal">
           <div class="modal-content">
@@ -60,7 +69,7 @@
               >&times;</span
             >
             <p>
-              Stray Kids é um grupo de K-pop formado em 2017 pela JYP
+              <strong>Stray Kids</strong> é um grupo de K-pop formado em 2017 pela JYP
               Entertainment, composto por oito membros. Eles são conhecidos por
               sua autenticidade, habilidades de produção e letras que abordam
               temas como luta pessoal e juventude. Com uma base de fãs leais e
@@ -78,7 +87,7 @@
               >&times;</span
             >
             <p>
-              Blackpink é um grupo sul-coreano de K-pop formado pela YG
+              <strong>Blackpink</strong> é um grupo sul-coreano de K-pop formado pela YG
               Entertainment, composto por Jisoo, Jennie, Rosé e Lisa. Desde sua
               estreia em 2016, o Blackpink ganhou imensa popularidade tanto na
               Coreia do Sul quanto internacionalmente, com hits como "Whistle",
@@ -97,7 +106,7 @@
               >&times;</span
             >
             <p>
-              BTS é um grupo de K-pop sul-coreano formado pela Big Hit
+              <strong>BTS</strong> é um grupo de K-pop sul-coreano formado pela Big Hit
               Entertainment, composto por sete integrantes: RM, Jin, Suga,
               J-Hope, Jimin, V e Jungkook. Desde sua estreia em 2013, o BTS
               alcançou um sucesso meteórico, conquistando uma enorme base de fãs

@@ -97,22 +97,12 @@ section ul {
     margin-top: 24px;
 }
 
-.games-list img {
+.kpoplist img {
     border-radius: 8px;
     width: 90px;
     height: 120px;
     object-fit: cover;
 }
-
-.channel-list img {
-    border-radius: 50%;
-    width: 70px;
-    border: 1px solid #443E54;
-}
-
-#social-media {
-   margin-bottom: 24px;
-} 
 
 .modal {
     display: none;
@@ -138,6 +128,22 @@ section ul {
     cursor: pointer;
   }
 
+.btn{
+    background-color: white;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn:active{
+    color: purple;
+}
+
+#skz{
+    margin-bottom: 10px;
+}
 
 /* Transitions */
 
